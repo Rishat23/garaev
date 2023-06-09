@@ -1,0 +1,55 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"extends":["airbnb", "prettier"],
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+	 	"ecmaVersion": "latest",
+	 	"sourceType": "module"
+	},
+	"plugins": [
+		"babel",
+		"import",
+		"prettier"
+	],
+	"rules": {
+		"linebreak-style": "off",
+		"arrow-parens": "off",
+		"object-curly-newline": "off",
+		"no-mixed-operators": "off",
+		"arrow-body-style": "off",
+		"function-paren-newline": "off",
+		"no-plusplus": "off",
+		"space-before-function-paren": 0,
+		"max-len": [0, 120, 2, { "ignoreUrls": true }],
+		"no-alert": "error",
+		"no-param-reassign": "off",
+		"no-underscore-dangle": "off",
+		"no-unused-expressions": "off",
+		"class-methods-use-this": "off",
+		"no-new": "off",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"json": "never"
+			}
+		],
+		"react/function-component-definition": [
+			"error",
+			{
+				"namedComponents": ["function-declaration", "arrow-function"],
+				"unnamedComponents": "arrow-function"
+			}
+		],
+		"import/no-extraneous-dependencies": [0, {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}],
+		"react/prop-types": 0,
+		"jsx-a11y/anchor-is-valid": 0,
+		"no-restricted-exports": [0, { "restrictedNamedExports": ["default"] }],
+		"prettier/prettier": ["warn"]
+	}
+}
